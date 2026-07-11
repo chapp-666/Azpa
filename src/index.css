@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #e6edf3;
+  background-color: #0a0e14;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.light-mode {
+  color: #161b22;
+  background-color: #ffffff;
+}
+
+.light-mode .bg-azpa-bg {
+  background-color: #ffffff;
+}
+
+.light-mode .bg-azpa-sidebar {
+  background-color: #f6f8fa;
+}
+
+.light-mode .bg-azpa-card {
+  background-color: #ffffff;
+}
+
+.light-mode .bg-azpa-hover {
+  background-color: #f3f4f6;
+}
+
+.light-mode .bg-azpa-accent\/10 {
+  background-color: rgba(88, 166, 255, 0.1);
+}
+
+.light-mode .bg-azpa-accent\/15 {
+  background-color: rgba(88, 166, 255, 0.15);
+}
+
+.light-mode .bg-azpa-accent\/5 {
+  background-color: rgba(88, 166, 255, 0.05);
+}
+
+.light-mode .bg-azpa-sidebar\/50 {
+  background-color: rgba(246, 248, 250, 0.5);
+}
+
+.light-mode .bg-azpa-sidebar\/80 {
+  background-color: rgba(246, 248, 250, 0.8);
+}
+
+.light-mode .bg-azpa-sidebar\/50\.50 {
+  background-color: rgba(246, 248, 250, 0.5);
+}
+
+.light-mode .border-azpa-border {
+  border-color: #d0d7de;
+}
+
+.light-mode .text-azpa-text {
+  color: #161b22;
+}
+
+.light-mode .text-azpa-textSecondary {
+  color: #6e7681;
+}
+
+.light-mode .placeholder-azpa-textSecondary\/50::placeholder {
+  color: rgba(110, 118, 129, 0.5);
+}
+
+.light-mode .shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode ::-webkit-scrollbar-track {
+  background: #f0f6fc;
+}
+
+.light-mode ::-webkit-scrollbar-thumb {
+  background: #d0d7de;
+}
+
+.light-mode ::-webkit-scrollbar-thumb:hover {
+  background: #98929d;
+}
+
+.light-mode .markdown-body h1,
+.light-mode .markdown-body h2 {
+  color: #0969da;
+}
+
+.light-mode .markdown-body code {
+  background-color: #f0f6fc;
+  color: #161b22;
+}
+
+.light-mode .markdown-body pre {
+  background-color: #f0f6fc;
+  border-color: #d0d7de;
+}
+
+.light-mode .markdown-body blockquote {
+  color: #6e7681;
+}
+
+.light-mode .markdown-body a {
+  color: #0969da;
+}
+
+.light-mode .markdown-body th,
+.light-mode .markdown-body td {
+  border-color: #d0d7de;
+}
+
+.light-mode .markdown-body th {
+  background-color: #f6f8fa;
+}
+
+.light-mode .markdown-body hr {
+  border-color: #d0d7de;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+.markdown-body {
+  font-family: inherit;
+  color: inherit;
+  line-height: 1.7;
+}
+
+.markdown-body h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+  color: #58a6ff;
+}
+
+.markdown-body h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.75rem 0 0.5rem;
+  color: #58a6ff;
+}
+
+.markdown-body h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.markdown-body p {
+  margin: 0.5rem 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.markdown-body li {
+  margin: 0.25rem 0;
+}
+
+.markdown-body code {
+  background-color: #161b22;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  font-size: 0.9em;
+  color: #e6edf3;
+}
+
+.markdown-body pre {
+  background-color: #161b22;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+  border: 1px solid #30363d;
+}
+
+.markdown-body pre code {
+  background: none;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: 3px solid #58a6ff;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+  color: #8b949e;
+}
+
+.markdown-body a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+}
+
+.markdown-body th,
+.markdown-body td {
+  border: 1px solid #30363d;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.markdown-body th {
+  background-color: #161b22;
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  border: none;
+  border-top: 1px solid #30363d;
+  margin: 1rem 0;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body em {
+  font-style: italic;
+}
